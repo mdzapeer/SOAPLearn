@@ -1,0 +1,17 @@
+It will require a POST action with the body below:
+
+<Envelope xmlns=""http://schemas.xmlsoap.org/soap/envelope/"">
+    <Body>
+        <notify xmlns=""http://server.soap.adi.adpter.cmsgw.ums.huawei.com"">
+            <notifyRequest>
+                <MD5CcheckSum></MD5CcheckSum>
+                <NO>[number]</NO>
+                <URL>ftp://UMS:Int_Ums123@10.10.70.200/UMS/VOD/TESTSOAP/testsoap1.xml</URL>
+            </notifyRequest>
+        </notify>
+    </Body>
+</Envelope>
+
+
+
+You will need to replace [MediaID] with the proper media ID, or the path to the ADI XML file, and [number] has to be a unique random number.
